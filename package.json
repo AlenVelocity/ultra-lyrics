@@ -1,0 +1,33 @@
+{
+  "name": "ultralife",
+  "version": "1.0.0",
+  "description": "Lyrics Fetcher",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https:github.com/alensaito1/ultralife"
+  },
+  "keywords": [
+    "lyrics",
+    "genius",
+    "song",
+    "music"
+  ],
+  "author": "Alen Yohannan",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^16.4.13",
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.29.0",
+    "eslint": "^7.32.0",
+    "prettier": "^2.3.2",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.10"
+  }
+}
