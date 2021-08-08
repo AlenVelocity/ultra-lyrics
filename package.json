@@ -4,7 +4,12 @@
   "description": "Lyrics Fetcher",
   "main": "dist/index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "build": "tsc -p .",
+    "lint": "eslint \"src/**/*.ts\"",
+    "doc": "typedoc",
+    "prepublish": "npm run build",
+    "prettier-format": "prettier --config .prettierrc \"src/**/*.ts\" --write"
   },
   "repository": {
     "type": "git",
