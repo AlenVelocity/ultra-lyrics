@@ -9,7 +9,7 @@ import Utils from '../Utils'
  * @param term The query to search for
  * @returns A Promise that resolves to an object containing the search results
  */
-export const search = async (term: string): Promise<UltraLyricsFunctionReturnType<SearchResults>> => {
+export const search = async (term: string | number): Promise<UltraLyricsFunctionReturnType<SearchResults>> => {
     try {
         const data = await Utils.fetch<IGeniusResponse<IRawSearchResponse>>(`${API_BASE_URL}/search/song?q=${term}`, {
             headers: {
