@@ -1,6 +1,6 @@
 # Ultra-Lyrics
 
-<img src="https://img.icons8.com/color/96/000000/music--v2.png" alt="dotenv" align="right" />
+<img src="https://img.icons8.com/color/96/000000/music--v2.png" alt="ultra" align="right" />
 
 Ultra-Lyrics is a package which fetches the [Genius](https://img.icons8.com/color/144/000000/music--v2.png) API and uses the data to scrap the lyrics from the actual website. Occasionally paired with [Spotifydl-Core](https://www.npmjs.com/package/spotifydl-core)
 
