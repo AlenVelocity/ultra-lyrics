@@ -1,6 +1,6 @@
 {
   "name": "ultra-lyrics",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Lyrics Fetcher",
   "main": "dist/index.js",
   "types": "dist",
