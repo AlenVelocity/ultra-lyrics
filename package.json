@@ -1,8 +1,12 @@
 {
-  "name": "ultralife",
+  "name": "ultra-lyrics",
   "version": "1.0.0",
   "description": "Lyrics Fetcher",
   "main": "dist/index.js",
+  "types": "dist",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "node test.js",
     "build": "tsc -p .",
@@ -13,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https:github.com/alensaito1/ultralife"
+    "url": "git+https:github.com/alensaito1/ultraa-lyrics"
   },
   "keywords": [
     "lyrics",
