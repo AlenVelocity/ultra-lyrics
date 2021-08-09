@@ -4,6 +4,11 @@ import Parser from './Parser'
 import { ISearchResults, UltraLyricsFunctionReturnType } from './Types'
 import Utils from './Utils'
 
+/**
+ * Search for lyrics
+ * @param term The query to search for
+ * @returns A Promise that resolves to an object containing the search results
+ */
 export const search = async (term: string): Promise<UltraLyricsFunctionReturnType<ISearchResults>> => {
     try {
         const data = await Utils.fetch<IGeniusResponse<IRawSearchResponse>>(`${API_BASE_URL}/search/song?q=${term}`, {

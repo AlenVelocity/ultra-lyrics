@@ -4,6 +4,11 @@ import { API_BASE_URL } from './Constants'
 import { ISearchResults } from './Types'
 import Utils from './Utils'
 
+/**
+ * Function to get lyrics from Genius.com
+ * @param {number | ISearchResults[0]} - ID of the song or an elemeny of the array of SearchResults
+ * @returns {Promise<UltraLyricsFunctionReturnType<{ error: null | Error, data: string }>> - The promise that resolves to the lyrics
+ */
 export const getLyrics = async (
     param: number | Partial<ISearchResults[0]>
 ): Promise<UltraLyricsFunctionReturnType<string>> => {
