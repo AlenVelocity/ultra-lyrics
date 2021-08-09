@@ -11,7 +11,7 @@
     "test": "node test.js",
     "build": "tsc -p .",
     "lint": "eslint \"src/**/*.ts\"",
-    "doc": "typedoc",
+    "docs": "typedoc",
     "prepublish": "npm run build",
     "prettier-format": "prettier --config .prettierrc \"src/**/*.ts\" --write"
   },
