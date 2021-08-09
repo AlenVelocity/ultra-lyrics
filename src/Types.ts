@@ -66,14 +66,25 @@ export interface IGeniusResponse<R> {
     response: R
 }
 
-export type ISearchResults = {
+export type Song = {
+    /** ID of the song*/
     id: number
+    /** Title of the song*/
     title: string
+    /** Artist of the song */
     artist: Partial<IArtist>
+    /** URL of the cover art*/
     image: string
+    /** URL of the song*/
     url: string
-}[]
+}
+export type SearchResults = Song[]
 
+/**
+ * Every function exported from package returns this object with this type
+ * @property {null|Error} error - this property will the null if no error occurred or an Error object if an error occurred
+ * @property data - This property will contain the data returned by the function
+ */
 export type UltraLyricsFunctionReturnType<T> = {
     error: Error | null
     data: T | null

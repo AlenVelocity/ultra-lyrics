@@ -1,4 +1,4 @@
-import { IHit, ISearchResults } from '.'
+import { IHit, SearchResults } from '.'
 
 /**
  * @internal
@@ -10,7 +10,7 @@ export default class Parser {
     /**
      * Method which parses the search results.
      */
-    parse = (): ISearchResults => {
+    parse = (): SearchResults => {
         return this.raw.map(({ id, title, primary_artist, song_art_image_url, url }) => ({
             id,
             url,
