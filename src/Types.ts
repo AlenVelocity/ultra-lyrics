@@ -57,13 +57,13 @@ export interface IMeta {
     status: number
 }
 
-export interface IResponse {
+export interface IRawSearchResponse {
     sections: ISection[]
     next_page: number
 }
-export interface IRawSearchResults {
+export interface IGeniusResponse<R> {
     meta: IMeta
-    response: IResponse
+    response: R
 }
 
 export type ISearchResults = {
