@@ -1,11 +1,12 @@
+import { IGeniusResponse, IRawSearchResponse } from '.'
 import { API_BASE_URL, USER_AGENT } from './Constants'
 import Parser from './Parser'
-import { IRawSearchResults, ISearchResults, UltraLyricsFunctionReturnType } from './Types'
+import { ISearchResults, UltraLyricsFunctionReturnType } from './Types'
 import Utils from './Utils'
 
 export const search = async (term: string): Promise<UltraLyricsFunctionReturnType<ISearchResults>> => {
     try {
-        const data = await Utils.fetch<IRawSearchResults>(`${API_BASE_URL}/search/song?q=${term}`, {
+        const data = await Utils.fetch<IGeniusResponse<IRawSearchResponse>>(`${API_BASE_URL}/search/song?q=${term}`, {
             headers: {
                 'User-Agent': USER_AGENT
             }
