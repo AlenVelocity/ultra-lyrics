@@ -1,6 +1,5 @@
 import { load } from 'cheerio'
 import { IGeniusResponse, Song, UltraLyricsFunctionReturnType } from '..'
-import { API_BASE_URL } from '../Constants'
 import Utils from '../Utils'
 
 /**
@@ -12,7 +11,7 @@ export const getLyrics = async (param: number | Partial<Song>): Promise<UltraLyr
     try {
         const id = typeof param === 'number' ? param : param.id
         const { response } = await Utils.fetch<IGeniusResponse<{ song: { url: string } }>>(
-            `${API_BASE_URL}/songs/${id}`,
+            Utils.getUrl(`/songs/${id}`),
             {
                 responseType: 'json'
             }

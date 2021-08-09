@@ -14,6 +14,9 @@ npm i ultra-lyrics
 
 ## Usage
 
+> Note:
+> To authenticate with a [Genius access token](https://docs.genius.com/#/authentication-h1), you need to add it to [`process.env`](https://nodejs.org/dist/latest-v14.x/docs/api/process.html#process_process_env) as an ENV Variable or usign [`dotenv`](https://www.npmjs.com/package/dotenv) wth the name as `GENIUS_ACCESS_TOKEN`
+
 > Search for songs
 
 ```TS
